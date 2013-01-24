@@ -6,7 +6,7 @@
  
 using namespace std;
 
-void printMessage();
+void convertExtension();
 void matchNameLoop(list<string>* movieList, list<string>* smiList);
 void matchName(string* movieName, string* smiName);
 string getExtension(string* name);
@@ -15,11 +15,11 @@ const char* directory = ".\\";
 
 int main()
 {
-  printMessage();
+  convertExtension();
   return 0;
 }
 
-void printMessage() 
+void convertExtension() 
 {
   DIR *dir;
   struct dirent *ent;
